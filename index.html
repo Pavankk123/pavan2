@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udupi Krishna Temple</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ae6363;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes full height */
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        header img {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 10px; /* Space between the image and title */
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .main-content {
+            padding: 20px;
+        }
+        
+        .main-content img {
+            max-width: 85%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .gallery {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            height: 300px; /* Adjust this height to control the size of the gallery */
+            width: 600px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: none;
+            object-fit: cover; /* Ensure the image covers the container */
+        }
+        
+        .gallery img.active {
+            display: block;
+        }
+        
+        .gallery .prev, .gallery .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 3px;
+            user-select: none;
+        }
+        
+        .gallery .prev {
+            left: 0;
+        }
+        
+        .gallery .next {
+            right: 0;
+        }
+        
+        .gallery .prev:hover, .gallery .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .contact-form {
+            margin-top: 20px;
+            background-color: #000; /* Black background for the contact form section */
+            color: #fff; /* White text color for readability */
+            padding: 20px; /* Add padding for better spacing */
+            border-radius: 8px; /* Rounded corners for the form container */
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #555; /* Darker border for better visibility on black background */
+            border-radius: 4px;
+            background-color: #222; /* Slightly lighter background for input fields */
+            color: #fff; /* White text color inside input fields */
+        }
+        
+        .contact-form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background: #555;
+        }
+        
+        .map-container {
+            width: 45%;
+            height: 8px; /* Adjust height as needed */
+            max-width: 800px; /* Adjust as needed */
+            margin: 10px auto; /* Add margin to create space around the map */
+            padding: 20px; /* Optional padding */
+            box-sizing: border-box; /* Include padding in width calculation */
+            padding-top: 50px;
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1px 0;
+            position: fixed; /* Fixed position to stick to the bottom */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(100%); /* Hide footer initially */
+             /* Smooth transition for footer visibility */
+        }
+        
+        footer.visible {
+            transform: translateY(0); /* Show footer */
+        }
+        .spacer {
+            padding-top: 80px; /* Adjust the padding-top value to create the desired spacing */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Krishna1.webp" alt="Temple Icon" >
+        <h1>Udupi Krishna Temple</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#map">Map</a>
+
+    </nav>
+
+    <div class="container main-content" id="home">
+        <h2>Welcome to the Udupi Krishna Temple</h2>
+        <p>Welcome to the Udupi Krishna Temple, where ancient traditions meet serene spirituality. Nestled in the historic city of Udupi, our temple invites you to embark on a journey of faith and devotion. With its stunning architecture and sacred ambiance, the temple is a place of worship, reflection, and community. Whether you are here to seek blessings, engage in vibrant festivals, or simply find a moment of peace, we warmly welcome you to join us in celebrating the divine grace of Lord Krishna. Experience the harmony and joy that our temple brings to every visitor.The Udupi Krishna Temple, located in Udupi, Karnataka, is a renowned shrine dedicated to Lord Krishna. Known for its rich history and vibrant religious practices, the temple attracts devotees from all over the world.</p>
+        <img src="Udupi_Krishna_Temple.jpg" alt="Udupi Krishna Temple">
+    </div>
+
+    <div class="container main-content" id="gallery">
+        <h3>Temple Gallery</h3>
+        <p>Explore our gallery to see more images of the Udupi Krishna Temple and its surroundings.</p>
+        <div class="gallery">
+            <img src="Krishna1.webp" alt="Temple Interior" class="active">
+            <img src="Krishna6.png" alt="Festivals">
+            <img src="krishna3.jpg" alt="Devotees">
+            <!-- Add more images as needed -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="container main-content" id="about">
+        <h3>About the Temple</h3>
+        <p>The temple is famous for its unique tradition of worship and the delicious 'prasadam' served to the devotees. The temple complex includes several other shrines and a beautiful garden.The Udupi Krishna Temple is a renowned Hindu temple dedicated to Lord Krishna, located in Udupi, Karnataka. Known for its rich history and spiritual significance, the temple is famous for its unique worship practices and the deity's idol, which is considered to be self-manifested. Visitors come to the temple to offer prayers, participate in religious ceremonies, and experience its peaceful atmosphere. The temple also plays a central role in local cultural and religious events, drawing devotees from all over for its vibrant celebrations and spiritual teachings.</p>
+    </div>
+
+    <div class="container main-content" id="contact">
+        <h3>Contact Us</h3>
+        <form class="contact-form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="map-container" id="map">
+        <h1>Map</h1>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987658.9703828474!2d73.09214175909813!3d13.341166199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbba1fb4b68f1%3A0xf6b5da87d182612e!2sUdupi%20Shri%20Krishna%20Matha%20(Temple)!5e0!3m2!1sen!2sin!4v1723258569767!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        
+    </div>
+    <div class="spacer"></div>
+    
+    
+    
+    
+
+    <footer id="footer">
+        <p>&copy; 2024 Udupi Krishna Temple. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.gallery img');
+            slides.forEach((slide) => {
+                slide.style.display = "none";  
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            let slides = document.querySelectorAll('.gallery img');
+            slideIndex += n;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = slides.length}
+            slides.forEach((slide) => {
+                slide.style.display = "none";  
+            });
+            slides[slideIndex-1].style.display = "block";
+        }
+        // scripts.js
+document.addEventListener('scroll', function() {
+    const footer = document.getElementById('footer');
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const documentHeight = document.documentElement.offsetHeight;
+
+    if (scrollPosition >= documentHeight) {
+        footer.classList.add('visible');
+    } else {
+        footer.classList.remove('visible');
+    }
+});
+
+    </script>
+</body>
+</html>
